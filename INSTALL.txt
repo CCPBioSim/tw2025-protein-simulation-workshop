@@ -1,0 +1,8 @@
+Prerequisites:
+
+1. Amber (pmemd) installed
+2. Ambertools installed
+
+Requirements (will install other required Python packages):
+git+https://github.com/CompBioAsia/CBAtools.git
+

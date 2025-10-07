@@ -1,0 +1,9 @@
+Basic energy minimisation script:
+  - Maximum of 1000 steps
+  - the first 50 using steepest descent, then switching to conjugate gradient
+  - print progress to the output file every 50 steps
+
+&cntrl
+  imin = 1, ncyc = 50, maxcyc = 1000,
+  ntpr = 50,
+&end

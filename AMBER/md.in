@@ -1,0 +1,20 @@
+Basic MD run:
+ - 10,000 steps with a timestep of 0.002 picoseconds (so 20 ps in total)
+ - write the current coordinates to the trajectory file evey 500 steps (1ps)
+ - write progress to the log file every 50 steps
+ - write a restart file every 500 steps
+ - wrap the coordinates into the periodic box
+ - configure SHAKE for bonds to hydrogen atoms
+ - use Langevin thermostat with a target temperature of 310K
+ - initialize velocities at 20 K
+ - run at constant pressure
+
+&cntrl
+  imin = 0, nstlim = 10000, dt=0.002,
+  ntwx = 1000, ntpr = 50, ntwr = 500,
+  iwrap = 1, 
+  ntc = 2, ntf = 2, ntb = 2,
+  ntt = 3, gamma_ln = 5, temp0 = 310.0
+  tempi = 20.0,
+  ntp = 1, taup = 1.0,
+&end
