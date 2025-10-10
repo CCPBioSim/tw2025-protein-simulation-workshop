@@ -4,6 +4,8 @@ FROM ghcr.io/ccpbiosim/jupyterhub-base:$BASE_IMAGE
 
 LABEL maintainer="James Gebbie-Rayet <james.gebbie@stfc.ac.uk>"
 
+ARG AMBERTOOLS_DL=null
+
 USER root
 RUN mkdir /opt/amber22 && \
     chown 1000:100 -R /opt/amber22 
