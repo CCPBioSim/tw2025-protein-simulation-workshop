@@ -38,7 +38,7 @@ WORKDIR $HOME
 
 # Add the exec to the path.
 ENV AMBERHOME=/opt/amber22
-ENV PATH="$PATH:/opt/amber${AMBER_VERSION}/bin"
+ENV PATH="$PATH:/opt/amber22/bin"
 ENV LD_LIBRARY_PATH="$AMBERHOME/lib"
 ENV PERL5LIB="$AMBERHOME/lib/perl"
 
